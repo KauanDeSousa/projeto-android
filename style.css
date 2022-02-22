@@ -16,13 +16,12 @@ body {
     font-size: 1em;
     font-weight: normal;
     text-decoration: none;
-    background-color: rgb(250, 236, 220);   
+    background-color: rgb(250, 236, 220);         
 }
 
 header {
     height: 220px;
-    background-image: linear-gradient(to bottom, green, rgb(6, 48, 6)); 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.459);
+    background-image: linear-gradient(to bottom, green, #063006); 
 }
 
 
@@ -35,7 +34,7 @@ h1 {
 }
 
 aside {
-    padding-top: 40px;
+    padding-top: 45px;
 }
 
 aside > p {
@@ -46,7 +45,10 @@ aside > p {
 }
 
 nav { 
-    padding-top: 50px;  
+    padding: auto;
+    background-color: #063006 ;
+    padding-bottom: 10px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.479);
 }
 
 nav > a {
@@ -65,11 +67,13 @@ nav > a:hover {
 }
 
 main {
+    min-width: 300px;
+    max-width: 1000px;
     background-color: white;
     margin:auto;
-    width: 1200px;
     padding: 40px; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+
 } 
 
 h2 {
@@ -83,7 +87,8 @@ main > p {
     padding-bottom: 20px;
     text-indent: 30px;
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 2em;
+    
 }
 
 section > h3 {
@@ -105,7 +110,7 @@ section > p {
     padding-top: 20px;
     text-align: justify;
     text-indent: 30px;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 p > a {
@@ -118,15 +123,20 @@ p > a:visited {
 }
 
 .foto2 {
-    margin-left: 160px;
+    width: 100%;
+    display: block;
+    
 }
 
 .foto3 {
-    margin-left: 160px;
+    width: 100%;
+    display: block;
 }
 
 .foto1 {
-    margin-left: 400px;
+    max-width: 400px;
+    margin: auto;
+    display: block;
 }
 
 p > strong {
@@ -134,32 +144,43 @@ p > strong {
 }
 
 div {
+    min-height: 500px;
+    min-width: 300px;
+    max-width: 1000px;
     background-color:rgb(0, 77, 0);
-    margin: auto;
-    width: 1200px;
-    padding: 40px;  
+    margin: auto; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+
+    padding-bottom: 30%;
+
+    position: relative;
 }
 
-.video {
-    margin-left: 60px;
-    width: 1000px;
-    height: 600px;
+div > iframe.video {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
 }
+
 
 article {
+    min-height:300px;
+    max-width: 1000px;
     background-color: white;
     margin:auto;
-    width: 1200px;
     padding: 40px; 
     border-radius: 0px 0px 10px 10px; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
 }
 
 section.left {
+    min-width: 300px;
+    max-width: 900px;
     background-color: rgb(3, 170, 114);
     margin:auto;
-    width: 1100px;
     border-radius: 10px;
 }
 section > h4 {
@@ -211,12 +232,5 @@ footer > p {
     color: white;
 }
     
-@media (max-width: 1000px) {
-    header {
-        width: 100%;
-        
-    }
-}
-
 
 
