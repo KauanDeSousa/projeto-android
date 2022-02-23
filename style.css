@@ -145,7 +145,6 @@ p > strong {
 }
 
 div {
-    min-height: 500px;
     min-width: 300px;
     max-width: 1000px;
     background-color:rgb(0, 77, 0);
